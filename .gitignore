@@ -1,0 +1,43 @@
+# ============================================
+# 3D Printer Project — .gitignore
+# ============================================
+
+# --- Generated files ---
+# STL files are build artifacts (regenerated from source)
+# Uncomment the line below if you prefer NOT to track STLs in git.
+# If you DO want STLs in git (for sharing), leave it commented.
+# models/*/stl/*.stl
+
+# --- Slicer files ---
+*.3mf
+*.gcode
+*.gcode.gz
+
+# --- Temporary / backup files ---
+*.bak
+*.tmp
+*~
+*.autosave
+
+# --- FreeCAD ---
+*.FCStd1
+*.FCBak
+
+# --- Fusion 360 ---
+# .f3d files are binary — track if needed, but they can be large
+# *.f3d
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- Secrets & credentials (global policy) ---
+.env*
+*.key
+*.pem
+credentials*.json
+serviceAccountKey.json
