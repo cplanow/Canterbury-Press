@@ -112,6 +112,18 @@ The `lib/` directory contains reusable OpenSCAD modules shared across all models
 - [Print Settings](docs/print-settings.md) — PLA and ASA profiles tuned for the P1S
 - [Library Reference](docs/library-reference.md) — all shared OpenSCAD modules and their parameters
 
+## AI-Assisted 3D Printing Research
+
+Research into AI tools for 3D model generation, print monitoring, and slicer optimization. See [docs/research/](docs/research/) for the full collection.
+
+| Report | Summary |
+|--------|---------|
+| [DesignBench.ai](docs/research/designbench-ai.md) | LLM-to-OpenSCAD code generation (dormant project, but technique widely adopted) |
+| [Hitem3D](docs/research/hitem3d.md) | AI image/text-to-3D mesh generator for organic models |
+| [LLM-3D Print (CMU)](docs/research/llm-3d-print.md) | Multi-agent LLM for autonomous real-time print error correction |
+| [AI Landscape](docs/research/ai-3d-printing-landscape.md) | Comprehensive survey of text-to-3D, text-to-CAD, print monitoring, and slicer optimization tools |
+| [Recommended Tools](docs/research/recommended-tools.md) | Prioritized tool stack for Canterbury Press, organized by implementation tier |
+
 ## License
 
 [GNU General Public License v3.0](LICENSE)
