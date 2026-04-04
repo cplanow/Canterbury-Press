@@ -37,7 +37,21 @@ Always copy `templates/new-model/` into `models/<descriptive-name>/` as the star
 - Run `make` to build from OpenSCAD sources
 - STLs are tracked in git for easy sharing
 
+### FDM Printability Rules
+- Reference `docs/fdm-design-rules.md` for comprehensive FDM design guidelines
+- No unsupported overhangs beyond 45° — redesign or add supports
+- Bridges up to 20mm are reliable; beyond that, add support geometry
+- Minimum horizontal hole diameter: 2mm; use teardrop shapes for horizontal holes
+- Snap-fit arms: minimum 1.2mm thick, 8-12mm long, deflect along layer lines
+- Use heat-set inserts over printed threads for M3+
+- Chamfer bottom edges 0.4mm to hide elephant foot
+
 ### Design Principles
 - Parametric first — dimensions are variables, not magic numbers
 - Design for printability — minimize supports, use flat bottom faces
 - Reuse shared libraries — add new common patterns to `lib/` when they'll be used across models
+
+### CadQuery (Alternative to OpenSCAD)
+- Use CadQuery (Python) when parts need fillets, chamfers, sweeps, or STEP export
+- CadQuery source files go in `models/<name>/src/*.py`
+- Install with `pip install cadquery`

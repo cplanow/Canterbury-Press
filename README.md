@@ -110,6 +110,7 @@ The `lib/` directory contains reusable OpenSCAD modules shared across all models
 
 - [Getting Started](docs/getting-started.md) — tool installation, project workflow, calibration
 - [Print Settings](docs/print-settings.md) — PLA and ASA profiles tuned for the P1S
+- [FDM Design Rules](docs/fdm-design-rules.md) — printability rules, overhangs, snap-fits, hole design, material notes
 - [Library Reference](docs/library-reference.md) — all shared OpenSCAD modules and their parameters
 
 ## AI-Assisted 3D Printing Research
@@ -118,6 +119,7 @@ Research into AI tools for 3D model generation, print monitoring, and slicer opt
 
 | Report | Summary |
 |--------|---------|
+| [AI Design Guide](docs/research/ai-3d-printing-design-guide.md) | Workflow guide: code-gen pipelines, text-to-CAD platforms, agentic workflows, prompt engineering |
 | [DesignBench.ai](docs/research/designbench-ai.md) | LLM-to-OpenSCAD code generation (dormant project, but technique widely adopted) |
 | [Hitem3D](docs/research/hitem3d.md) | AI image/text-to-3D mesh generator for organic models |
 | [LLM-3D Print (CMU)](docs/research/llm-3d-print.md) | Multi-agent LLM for autonomous real-time print error correction |
