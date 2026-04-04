@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "openscad": {
+      "type": "stdio",
+      "command": "openscad-mcp",
+      "args": [],
+      "env": {
+        "OPENSCAD_PATH": "/Applications/OpenSCAD-2021.01.app/Contents/MacOS/OpenSCAD"
+      }
+    },
+    "bambu-lab": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/christopherplanow/Development/tools/bambu-mcp/dist/index.js"
+      ],
+      "env": {
+        "BAMBU_LAB_MQTT_HOST": "PRINTER_IP_HERE",
+        "BAMBU_LAB_MQTT_PASSWORD": "ACCESS_CODE_HERE",
+        "BAMBU_LAB_DEVICE_ID": "SERIAL_NUMBER_HERE"
+      }
+    }
+  }
+}
